@@ -1,5 +1,6 @@
 yeast<-read.table("/Users/jon/stat465F14/class/cDNAdata/yeastCellCycle/yeastCellCycle_subset.csv",sep=",",header=TRUE,fill=TRUE)
 // In windows -- D:\R\R_PROJECT\R-Courses\Courses\Stats_for_Bioinformatics\ClassData
+// setwd('c:/documents/')
 indi<-apply(yeast[,2:19],1,sum)
 yeast<-yeast[is.na(indi)==F,]
 
